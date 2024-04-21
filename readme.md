@@ -6,15 +6,16 @@ Project Keep introduces a Solana-based NFT launchpad and marketplace designed to
 ## 2. Objectives
 - **To Develop a User-Friendly Platform:** Simplifying the creation and management of encrypted data NFTs for creators with varying levels of technical expertise.
 - **To Enhance NFT Data Security:** Utilizing Solana’s blockchain capabilities to ensure secure, tamper-proof encryption and storage of sensitive data within NFTs.
+- **To Inspire New Novel NFT Usecases:** Our NFT platform aims empower NFTs and NFT creators with unique and innovative features.
 - **To Implement Controlled Data Access:** Ensuring that the encrypted data can be accessed only by its owner, and sometimes under specific conditions.
 
 ## 3. Technical Framework
 ### Blockchain Platform: Solana
-Rationale: Chosen for its high throughput, low cost, and fast transaction finality which are ideal for deploying interactive and high-frequency applications like NFTs.
+Rationale: We're choosing to develop Solona as our first supported network for its high throughput, low cost, and fast transaction finality, which are ideal for deploying interactive and high-frequency applications like NFTs.
 
 ### Smart Contracts:
-Language: Rust, for robust and secure Solana smart contracts.
-Features:
+**Language:** Rust, for robust and secure Solana smart contracts.
+**Features:**
 - **Minting Function:** Handles the encryption of input data and the initial creation of the NFT.
 - **Trading Function:** Facilitates ownership transfer.
 - **Decommission Function:** Designed to decrypt the data for owner retrieval while disabling any further transactions of the NFT to ensure data exclusivity and prevent duplication.
