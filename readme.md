@@ -87,9 +87,34 @@ A major car manufacturer has minted a magazine into an NFT that goes over their 
 
 ## 10. Encryption and Decryption Flow
 
-We were unsuccessful in finding a method for transferring private keys without the assistance of a 3rd party custodial service. For this reason, every NFT minted on the platform that contains encrypted data will have the private key required for reading the data, stored securely on platform while only being accessible to the NFT holder.
+We were unsuccessful in finding a method for transferring private keys without the assistance of a 3rd party custodial service. For this reason, every NFT minted on the platform that contains encrypted data will have the private key required for reading the data, stored securely on the platform while only being accessible to the NFT holder.
 
-Until a more trustless solution is discovered, this is to be seen as a proprietary feature of the platform. It also will go to say that from a security standpoint, we cannot supply full trustless custody to our NFTs and the security of their contents will be limited to the trust provided in the platform itself, which would work hard to assure the confidence of its customers through audits and when possible, open source frameworks.
+Until a more trustless solution is discovered, this is to be seen as a proprietary feature of the platform. It also will go to say that from a security standpoint, we cannot supply full trustless custody to our NFTs, and the security of their contents will be limited to the trust provided in the platform itself, which would work hard to assure the confidence of its customers through audits and when possible, open source frameworks.
+
+There may be at some later point an API provided by the platform to third-party NFT marketplaces and strategic partners to decrypt and display the contents of an NFT remotely, given ownership is verifiable. This would be a late-stage implementation and assumes we are not able to solve the custody issue related to private keys.
+
+Here’s an example of how our minting, encryption, and decryption setup works:
+
+### Detailed Implementation Steps:
+
+1. **Initial Setup**:
+   - **Minting by Jonesy**:
+     - The platform generates a unique public-private key pair for the NFT (\(PK_{NFT}\), \(SK_{NFT}\)).
+     - Jonesy encrypts the NFT content (\(C_{enc}\)) with the NFT’s public key (\(PK_{NFT}\)).
+     - Store \(C_{enc}\) on the blockchain or off-chain securely linked to the NFT.
+     - The platform securely stores the corresponding private key (\(SK_{NFT}\)) on the platform server, ensuring it can only be accessed by the NFT owner.
+
+2. **Ownership and Access Management**:
+   - The platform controls access to the private key (\(SK_{NFT}\)) through an access control system that verifies NFT ownership via the blockchain.
+   - When an NFT is purchased and ownership is transferred, the platform’s system recognizes the new owner based on the transaction recorded on the blockchain.
+   - The platform allows the new owner to retrieve the private key (\(SK_{NFT}\)) in a secure manner, enabling them to decrypt the content (\(C_{enc}\)) locally.
+
+3. **Transfer of Ownership**:
+   - When the NFT is sold, the blockchain records the transaction and updates the owner’s address.
+   - The platform’s access control system ensures that only the current owner, as recorded on the blockchain, can request and retrieve the NFT’s private key (\(SK_{NFT}\)).
+
+4. **Decommissioning (Optional)**:
+   - If an NFT is decommissioned in order to reveal its hidden contents, then the smart contract marks the NFT as decommissioned on the blockchain, which prevents further transfer and the platform will allow the decryption of the content.
 
 ## 11. Conclusion
 
