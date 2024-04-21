@@ -15,33 +15,47 @@ Rationale: Chosen for its high throughput, low cost, and fast transaction finali
 ### Smart Contracts:
 Language: Rust, for robust and secure Solana smart contracts.
 Features:
-- Minting Function: Handles the encryption of input data and the initial creation of the NFT.
-- Trading Function: Facilitates ownership transfer.
-- Decommission Function: Designed to decrypt the data for owner retrieval while disabling any further transactions of the NFT to ensure data exclusivity and prevent duplication.
-- Transfer Hooks: To enforce checks and validations during transfers, ensuring all transactions are secure and intended.
+- **Minting Function:** Handles the encryption of input data and the initial creation of the NFT.
+- **Trading Function:** Facilitates ownership transfer.
+- **Decommission Function:** Designed to decrypt the data for owner retrieval while disabling any further transactions of the NFT to ensure data exclusivity and prevent duplication.
+- **Transfer Hooks:** To enforce checks and validations during transfers, ensuring all transactions are secure and intended.
 
 ### Encryption/Decryption Mechanism:
-Technology: Asymmetric cryptography, where the private key for decryption is securely generated and stored, and the public key is embedded within the NFT for encryption.
-Decommissioning Process: On executing the decommission command, the smart contract utilizes the private key to decrypt the data, making it accessible to the NFT owner, while simultaneously altering the NFT’s trade status to prevent future transactions.
+**Technology:** Asymmetric cryptography, where the private key for decryption is securely generated and stored, and the public key is embedded within the NFT for encryption.
+**Decommissioning Process:** On executing the decommission command, the smart contract utilizes the private key to decrypt the data, making it accessible to the NFT owner, while simultaneously altering the NFT’s trade status to prevent future transactions.
 
 ### Data Storage:
-On-chain: Storing minimal data like references and hashes to ensure transactional integrity and security.
-Off-chain: Utilizing decentralized storage solutions (e.g., Arweave or IPFS) for storing larger data securely, linked via hashes to the NFTs for verification.
+**On-chain:** Storing minimal data like references and hashes to ensure transactional integrity and security.
+**Off-chain:** Utilizing decentralized storage solutions (e.g., Arweave or IPFS) for storing larger data securely, linked via hashes to the NFTs for verification.
 
 ### User Interface:
-Components: Interfaces for uploading data, minting NFTs, viewing owned NFTs, and decommissioning NFTs to access data.
-Interactivity: Features to preview encrypted data (in hashed form), manage NFT transactions, and retrieve data post-decommission.
+**Components:** Interfaces for uploading data, minting NFTs, viewing owned NFTs, and decommissioning NFTs to access data.
+**Interactivity:** Features to preview encrypted data (in hashed form), manage NFT transactions, and retrieve data post-decommission.
 
 ## 4. Unique NFT Features
-- Private Data Encryption and Safe Access: Robust asymmetric cryptography for initial encryption; Proxy Re-Encryption for dynamic access aligned with ownership.
-- Controlled Data Decommissioning: Decommissioning disables further NFT transactions, allowing data retrieval while protecting exclusivity.
-- Standardized JSON for Interoperability: Accepting Valid JSON: Our platform accepts well-structured JSON files to mint NFTs, which allows for the standardization of displays across various marketplaces. This JSON can include metadata that describes the NFT’s content, value, and other details crucial for transparency and usability across platforms.
+
+Below are the key differentiators of our NFTs:
+
+### Unique NFT Features
+
+1. **Private Data Encryption and Safe Access:**
+   - Our NFTS allow for encrypted content that can only be accessed by the NFT owner. 
+
+2. **Controlled Data Decommissioning:**
+   - Decommissioning disables further NFT transactions, allowing data retrieval while protecting exclusivity.
+
+3. **Standardized JSON For Interoperability:**
+   - **Accepting Valid JSON:** Our platform accepts well-structured JSON files to mint NFTs, which allows for the standardization of displays across various marketplaces. This JSON can include metadata that describes the NFT’s content, value, and other details crucial for transparency and usability across platforms.
+   - **Robust templating engine:** Different NFTs may require different json structures. Our platform will aim to permit user-created templates as well as use community-published templates.
+   - **Standardized NFT JSON data combined structured under templates can offer rich display for NFTs. A platform stretch goal would be to allow displays to also be customized based on expected data contained within the NFT.**
+
+4. **Minting controls for mining multiple NFTs at one time:**
+   - **Selective Hiding:** When mining multiple NFTs, the platform will support a variety of features that allow control over how often and where secret contents might be attached.
 
 ## 5. Benefits
 - Enhanced Security: By leveraging asymmetric encryption, Project Keep ensures that all data embedded within NFTs is protected against unauthorized access throughout its lifecycle.
-- Data Sovereignty: Users maintain complete control over their data, with the assurance that they can safely access their data upon decommissioning the NFT, without risk of exposure during transfer or trading.
-- Market Flexibility: The use of standardized JSON for NFT metadata ensures that NFTs minted on Project Keep are compatible with multiple marketplaces, increasing their liquidity and market potential.
-- Innovative Utility: The ability to use NFTs to securely transfer important data, privately.
+- Market Flexibility: Using standardized JSON for NFT metadata ensures that NFTs minted on Project Keep are compatible with multiple marketplaces, increasing their liquidity and market potential.
+- Innovative Utility: Using NFTs to securely and privately transfer important data.
 
 ## 6. Monetization Strategy
 Project Keep will implement several revenue-generating mechanisms:
