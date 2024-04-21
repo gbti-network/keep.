@@ -1,4 +1,4 @@
-# Proposal for a Solana NFT Launchpad: "Project Keep."
+# Proposal for a Solana NFT Launchpad, Marketplace, and Collectors' platform.
 
 ## 1. Introduction
 Project Keep introduces a Solana-based NFT launchpad designed to facilitate the creation, minting, and lifecycle management of NFTs that securely store encrypted data (“text blobs”). These NFTs will feature unique mechanisms where data is encrypted upon minting and can only be decrypted and retrieved by the owner upon executing a specific “decommission” action, which disables further trading of the NFT while preserving the data for the owner’s continued access.
