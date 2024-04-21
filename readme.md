@@ -4,7 +4,7 @@
 Project Keep introduces a Solana-based NFT launchpad and marketplace designed to facilitate the creation, minting, and lifecycle management of NFTs that securely store encrypted data. These NFTs will feature unique mechanisms where data is encrypted upon minting and can only be decrypted by the NFT's owner.
 
 ## 2. Objectives
-- **To Develop a User-Friendly Platform: **Simplifying the creation and management of encrypted data NFTs for creators with varying levels of technical expertise.
+- **To Develop a User-Friendly Platform: ** Simplifying the creation and management of encrypted data NFTs for creators with varying levels of technical expertise.
 - **To Enhance NFT Data Security:** Utilizing Solana’s blockchain capabilities to ensure secure, tamper-proof encryption and storage of sensitive data within NFTs.
 - **To Implement Controlled Data Access:** Ensuring that the encrypted data can be accessed only by its owner, and sometimes under specific conditions.
 
