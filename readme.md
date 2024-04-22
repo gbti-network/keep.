@@ -42,14 +42,15 @@ Below are the key differentiators of our NFTs:
    - Our NFTS allow for encrypted content that can only be accessed by the NFT owner. 
 
 2. **Controlled Data Decommissioning:**
-   - Decommissioning disables further NFT transactions, allowing data retrieval while protecting exclusivity.
+   - NFTS with encrypted content can have their owners always be able to access the data or only access data after decomissioning.
+   - Decommissioning disables further NFT transactions, allowing data retrieval while protecting its exclusivity.
 
-3. **Standardized JSON For Interoperability:**
+4. **Standardized JSON For Interoperability:**
    - **Accepting Valid JSON:** Our platform accepts well-structured JSON files to mint NFTs, which allows for the standardization of displays across various marketplaces. This JSON can include metadata that describes the NFT’s content, value, and other details crucial for transparency and usability across platforms.
    - **Robust templating engine:** Different NFTs may require different json structures. Our platform will aim to permit user-created templates as well as use community-published templates.
    - **Standardized NFT JSON data combined structured under templates can offer rich display for NFTs. A platform stretch goal would be to allow displays to also be customized based on expected data contained within the NFT.**
 
-4. **Minting controls for mining multiple NFTs at one time:**
+5. **Minting controls for mining multiple NFTs at one time:**
    - **Selective Hiding:** When mining multiple NFTs, the platform will support a variety of features that allow control over how often and where secret contents might be attached.
 
 ## 5. Benefits
