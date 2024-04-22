@@ -23,6 +23,7 @@ Rationale: We're choosing to develop Solona as our first supported network for i
 
 ### Encryption/Decryption Mechanism:
 **Technology:** Asymmetric cryptography, where the private key for decryption is securely generated and stored, and the public key is embedded within the NFT for encryption.
+
 **Decommissioning Process:** On executing the decommission command, the smart contract utilizes the private key to decrypt the data, making it accessible to the NFT owner, while simultaneously altering the NFT’s trade status to prevent future transactions.
 
 ### Data Storage:
