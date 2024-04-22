@@ -18,8 +18,7 @@ Rationale: We're choosing to develop Solona as our first supported network for i
 **Features:**
 - **Minting Function:** Handles the encryption of input data and the initial creation of the NFT.
 - **Trading Function:** Facilitates ownership transfer.
-- **Decommission Function:** Designed to decrypt the data for owner retrieval while disabling any further transactions of the NFT to ensure data exclusivity and prevent duplication.
-- **Transfer Hooks:** To enforce checks and validations during transfers, ensuring all transactions are secure and intended.
+- **Decommission Function:** Designed to prevent decryption of data unless the asset is marked decommissioned to disable any further transactions of the NFT to ensure data exclusivity and prevent duplication.
 
 ### Encryption/Decryption Mechanism:
 **Technology:** Asymmetric cryptography, where the private key for decryption is securely generated and stored, and the public key is embedded within the NFT for encryption.
