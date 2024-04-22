@@ -25,6 +25,7 @@ Rationale: We're choosing to develop Solona as our first supported network for i
 
 ### Data Storage:
 **On-chain:** Storing minimal data like references and hashes to ensure transactional integrity and security.
+
 **Off-chain:** Utilizing decentralized storage solutions (e.g., Arweave or IPFS) for storing larger data securely, linked via hashes to the NFTs for verification.
 
 ### User Interface:
