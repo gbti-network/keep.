@@ -2,7 +2,7 @@
 
 ## 1. Executive Summary
 
-"Project keep." is a pioneering Solana-based NFT platform that facilitates the creation, minting, and lifecycle management of encrypted data NFTs. The platform will offer users exclusive control over their data through innovative decommissioning capabilities, allowing for the secure and efficient management of sensitive information. This proposal requests the necessary funding to cover the development and operational costs, including compensation for key management roles necessary to ensure the project’s success.
+"Project keep." is a Solana-first NFT platform that facilitates the creation, minting, and lifecycle management of encrypted data NFTs. The platform will offer users exclusive control over their data through innovative decommissioning capabilities, allowing for the secure and efficient management of sensitive information. This proposal requests the necessary funding to cover the development and operational costs, including compensation for key management roles necessary to ensure the project’s success.
 
 ## 2. Project Objectives
 
